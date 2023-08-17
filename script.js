@@ -37,7 +37,7 @@ function rot13(encodedStr) {
 	for(var i=0;i<encodedStr.length;i++)
 		{
 			var a=encodedStr[i];
-			decodedArr.push[lookup[a]];
+			decodedArr.push[lookup[a]||a];
 			
 		}
 	
