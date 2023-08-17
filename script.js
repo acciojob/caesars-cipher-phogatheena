@@ -39,8 +39,6 @@ function rot13(encodedStr) {
     const decodedChar = lookup[char] || char; // If not found in lookup, use the same character
 
     decodedArr.push(decodedChar);
-    var a = decodedArr.toString();
-
   return decodedArr.join(""); //return decodedArr
 }
 
