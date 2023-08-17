@@ -34,16 +34,14 @@ const lookup = {
 function rot13(encodedStr) {
   let decodedArr = []; // Your Result goes here
   // Only change code below this line
-	for(var i=0;i<encodedStr.length;i++)
-		{
-			var a=encodedStr[i];
-			decodedArr.push[lookup[a]||a];
-			
-		}
-	decodedArr=decodedArr.toString();
-	
+	for (let i = 0; i < encodedStr.length; i++) {
+    const char = encodedStr[i];
+    const decodedChar = lookup[char] || char; // If not found in lookup, use the same character
 
-  return decodedArr; //return decodedArr
+    decodedArr.push(decodedChar);
+  }
+
+  return decodedArr.join(""); //return decodedArr
 }
 
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
